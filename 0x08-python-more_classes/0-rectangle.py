@@ -7,8 +7,8 @@
 
 class Rectangle:
 
-"""
-    Rectangle empty class
-"""
+    """
+        Rectangle empty class
+    """
 
     pass
