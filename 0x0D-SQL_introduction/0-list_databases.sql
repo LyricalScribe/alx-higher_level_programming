@@ -1,2 +1,2 @@
 -- script to show databases
-show databases;
+SELECT * FROM sys.databases;
