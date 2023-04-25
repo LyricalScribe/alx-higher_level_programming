@@ -3,8 +3,8 @@
 // script to print status code of GET request
 
 const request = require('request');
-const url = process.arg[2];
+const url = process.argv[2];
 request(url, (err, res, body) => {
-  if (err) console.erroe(err);
+  if (err) console.error(err);
   console.log('code:', res.statusCode);
 });
