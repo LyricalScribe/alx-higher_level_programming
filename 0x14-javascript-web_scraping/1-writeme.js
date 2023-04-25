@@ -1,6 +1,6 @@
 #!/usr/bin/node
 
-//script to write a file
+// script to write a file
 
 const fs = require('fs');
 const filePath = process.argv[2];
