@@ -4,7 +4,7 @@ coefficients"""
 
 
 def pascal_triangle(n):
-    """Function to return a list of list 
+    """Function to return a list of list
     pascal triangle coeffecients"""
 
     if n < 1:
