@@ -7,20 +7,20 @@ import turtle
 
 
 class Base():
-	"""The Base model class"""
+    """The Base model class"""
 
-	__nb_objects = 0
+    __nb_objects = 0
 
-	def __init__(self, id=None):
-		"""Args: id(int), new initialized Base"""
+    def __init__(self, id=None):
+        """Args: id(int), new initialized Base"""
 
-		if id is not None:
-			self.id = id
-		else:
-			Base.__nb_objects += 1
-			self.id = Base__nb_objects
+        if id is not None:
+            self.id = id
+        else:
+            Base.__nb_objects += 1
+            self.id = Base.__nb_objects
 
-  @staticmethod
+    @staticmethod
     def to_json_string(list_dictionaries):
         """Return the JSON serialization of a list of dicts
 
@@ -170,4 +170,3 @@ class Base():
             turt.hideturtle()
 
         turtle.exitonclick()
-
