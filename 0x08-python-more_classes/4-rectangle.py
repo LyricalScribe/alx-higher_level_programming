@@ -1,12 +1,12 @@
 #!/usr/bin/python3
-"""Module of a Rectangle"""
+"""Defines the Rectangle class"""
 
 
 class Rectangle:
-    """Represent a rectangle"""
+    """Represent a rectangle."""
 
     def __init__(self, width=0, height=0):
-        """Initialize a new Rectangle.
+        """Initialization of new Rectangle
 
         Args:
             width (int): The width of the new rectangle
@@ -17,7 +17,7 @@ class Rectangle:
 
     @property
     def width(self):
-        """Gets/sets the width of the Rectangle"""
+        """Gets/sets width of the Rectangle"""
         return self.__width
 
     @width.setter
@@ -65,3 +65,9 @@ class Rectangle:
             if i != self.__height - 1:
                 rect.append("\n")
         return ("".join(rect))
+
+    def __repr__(self):
+        """Returns the string representation of the Rectangle"""
+        rect = "Rectangle(" + str(self.__width)
+        rect += ", " + str(self.__height) + ")"
+        return (rect)
