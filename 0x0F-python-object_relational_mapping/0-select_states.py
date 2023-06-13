@@ -17,7 +17,7 @@ if __name__ == "__main__":
         print("error connecting")
     cur = connection.cursor()
     try:
-        cur.execute("SELECT * FROM states ORDER BY states.id")
+        cur.execute("SELECT * FROM states ORDER BY id ASC")
         rows = cur.fetchall()
         for row in rows:
             print(row)
